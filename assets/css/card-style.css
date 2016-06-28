@@ -1,0 +1,19 @@
+#card {
+    border: 2px solid #222;
+    margin: 0 auto;
+    height: 400px;
+    width: 250px;
+}
+
+.front, .back {
+    padding: 5px;
+    text-align: center;
+}
+
+.kan-text {
+    font-size: 192px;
+}
+
+.romaji-text {
+    font-size: 64px;
+}

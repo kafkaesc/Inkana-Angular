@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="app/controllers/Kantroller.js"></script>
+    <link href="assets/lib/bootstrap-336/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/card-style.css" rel="stylesheet" />
+    <!--flip card -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  </head>
+  <body ng-app="Inkana">
+    <div class="jumbotron">
+      <h1>&#12371;&#12435;&#12395;&#12385;&#12399;</h1>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div id="card"> 
+          <div class="front"> 
+            <p class="kan-text">あ</p>
+          </div> 
+          <div class="back">
+            <p class="kan-text">あ</p>
+            <p class="romaji-text">a</p>
+          </div> 
+          <script>$("#card").flip({trigger: 'hover'});</script>
+        </div>
+        <div ng-controller="Kan-troller">
+          <h2>{{ title }}</h2>
+          <div ng-repeat="x in hiragana" class="col-md-6">
+            <p>{{ x.hiragana }}, {{ x.romaji }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
