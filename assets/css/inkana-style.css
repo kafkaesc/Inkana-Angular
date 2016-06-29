@@ -9,7 +9,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1#inkana {
   color: #fff;
+  display: inline-block;
   letter-spacing: 2px;
+  margin: 10px auto 0 auto;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 p {
@@ -18,4 +27,16 @@ p {
 
 .center {
   text-align: center;
+}
+
+.spacer-s {
+  height: 8px;
+}
+
+.spacer-m {
+  height: 16px;
+}
+
+.spacer-L {
+  height: 32px;
 }
