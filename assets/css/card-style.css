@@ -2,7 +2,7 @@
   border: 2px solid #222;
   margin: 0 auto;
   height: 400px;
-  width: 250px;
+  width: 100%;
 }
 
 .front, .back {
@@ -13,7 +13,7 @@
 #kana-toggle {
   border-radius: 0;
   margin-top: 4px;
-  width: 250px;
+  width: 100%;
 }
 
 .kana-btn {
@@ -28,13 +28,13 @@
   border-radius: 0;
   border-width: 0;
   height: 60px;
-  width: 250px;
+  width: 100%;
   margin-top: 4px;
   text-align: center;
 }
 
 .card-area {
-  width: 300px;
+  display: block;
   text-align: center;
   margin: 0 auto;
 }
