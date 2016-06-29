@@ -3,32 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-    <script src="app/controllers/Kantroller.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href="assets/lib/bootstrap-336/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="app/controllers/Kantroller.js"></script>
+    <link href="assets/css/inkan-style.css" rel="stylesheet" />
     <link href="assets/css/card-style.css" rel="stylesheet" />
     <!--flip card -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
   </head>
   <body ng-app="Inkana">
     <div class="jumbotron">
-      <h1>&#12371;&#12435;&#12395;&#12385;&#12399;</h1>
+      <img id="logo" src="assets/img/inkana.png">
+      <script src="assets/js/Malamar.js"></script>
+      <h1 id="inkana">Inkana</h1>
     </div>
     <div class="main">
       <div class="container">
-        <div id="card"> 
-          <div class="front"> 
-            <p class="kan-text">あ</p>
-          </div> 
-          <div class="back">
-            <p class="kan-text">あ</p>
-            <p class="romaji-text">a</p>
-          </div> 
-          <script>$("#card").flip({trigger: 'hover'});</script>
-        </div>
         <div ng-controller="Kan-troller">
+          <div id="card" ng-click="nextChar()"> 
+            <div class="front"> 
+              <p class="kan-text">{{ testChar }}</p>
+            </div> 
+            <div class="back">
+              <p class="kan-text">{{ testChar }}</p>
+              <p class="romaji-text">{{ testRom }}</p>
+            </div> 
+            <script>$("#card").flip({trigger: 'hover'});</script>
+          </div>
           <h2>{{ title }}</h2>
-          <div ng-repeat="x in hiragana" class="col-md-6">
+          <div ng-repeat="x in hiraganaOld" class="col-md-4">
             <p>{{ x.hiragana }}, {{ x.romaji }}</p>
           </div>
         </div>
