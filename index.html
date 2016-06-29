@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
-     <title>Inkana &mdash; a fun way to learn your kana!</title>
+    <title>Inkana &mdash; a fun way to learn your kana!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href="assets/lib/bootstrap-336/css/bootstrap.min.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
               <p class="kan-text">{{ testChar }}</p>
               <p class="romaji-text">{{ testRom }}</p>
             </div> 
-            <script>$("#card").flip({trigger: 'hover'});</script>
+            <script>$("#card").flip({trigger: 'click', reverse: true});</script>
           </div>
           <div id="kana-toggle"" class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary kana-btn" ng-click="setHiragana()">
