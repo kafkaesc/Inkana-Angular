@@ -6,14 +6,13 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href="assets/lib/bootstrap-336/css/bootstrap.min.css" rel="stylesheet" />
     <script src="app/controllers/Kantroller.js"></script>
-    <link href="assets/css/inkan-style.css" rel="stylesheet" />
     <link href="assets/css/card-style.css" rel="stylesheet" />
-    <!--flip card -->
+    <link href="assets/css/inkana-style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
   </head>
-  <body ng-app="Inkana">
+  <body>
     <div class="jumbotron">
       <img id="logo" src="assets/img/inkana.png">
       <script src="assets/js/Malamar.js"></script>
@@ -21,8 +20,8 @@
     </div>
     <div class="main">
       <div class="container">
-        <div ng-controller="Kan-troller">
-          <div id="card" ng-click="nextChar()"> 
+        <div ng-app="Inkana" ng-controller="Kan-troller">
+          <div id="card"> 
             <div class="front"> 
               <p class="kan-text">{{ testChar }}</p>
             </div> 
@@ -32,9 +31,12 @@
             </div> 
             <script>$("#card").flip({trigger: 'hover'});</script>
           </div>
-          <h2>{{ title }}</h2>
-          <div ng-repeat="x in hiraganaOld" class="col-md-4">
-            <p>{{ x.hiragana }}, {{ x.romaji }}</p>
+          <div id="next" ng-click="nextChar()">
+            <p class="next-text">Next</p>
+          </div>
+          <h2>{{ hiraganaTitle }}</h2>
+          <div ng-repeat="x in hiraganaOld" class="col-md-3 centera">
+            <p>{{ x.hiragana }} / {{ x.romaji }}</p>
           </div>
         </div>
       </div>
