@@ -20,6 +20,8 @@
   background-color: #0cf;
   border-radius: 0;
   border-width: 0;
+  font-size: 24px;
+  font-weight: 300;
   width: 50%
 }
 
@@ -33,6 +35,7 @@
   text-align: center;
 }
 
+
 .card-area {
   text-align: center;
   margin: 0 auto;
@@ -40,7 +43,7 @@
 
 .next-text {
   color: #fff;
-  font-size: 32px;
+  font-size: 36px;
   cursor: pointer;
 }
 
