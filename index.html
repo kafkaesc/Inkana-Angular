@@ -10,16 +10,11 @@
     <link href="assets/css/card-style.css" rel="stylesheet" />
     <link href="assets/css/inkana-style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-    <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
   </head>
   <body ng-app="Inkana" ng-controller="Kan-troller">
-    <div class="jumbotron">
-      <img id="logo" src="assets/img/inkana.png">
-      <br />
-      <script src="assets/js/Malamar.js"></script>
-      <h1 id="inkana" ng-mouseover="hoverTitle()" ng-mouseleave="leaveTitle()">{{ inkanaHeader }}</h1>
-    </div>
+    <div ng-include="'assets/templates/header.html'"></div>
     <div class="main">
       <div class="container">
         <div class="col-md-4 col-md-offset-4">

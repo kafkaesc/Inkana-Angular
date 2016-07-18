@@ -1,7 +1,7 @@
 var inkanaApp = angular.module('Inkana', []);
 
 inkanaApp.controller('Kan-troller', ['$scope', function($scope) {
-
+  var logo = angular.element(document.querySelector('#logo'));
   $scope.inkanaHeader = 'Inkana';
   $scope.romajiHeader = 'Inkana';
   $scope.katakanaHeader = 'インカナ';

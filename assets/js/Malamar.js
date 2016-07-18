@@ -1,12 +1,11 @@
-$("#logo").rotate({ 
-   bind: 
-     { 
-        mouseover : function() { 
-            $(this).rotate({animateTo:180})
-        },
-        mouseout : function() { 
-            $(this).rotate({animateTo:0})
-        }
-     } 
-   
+$("#logo").rotate({
+  bind:
+  {
+    mouseover : function() {
+    $(this).rotate({animateTo:180})
+  },
+  mouseout : function() {
+    $(this).rotate({animateTo:0})
+    }
+  }
 });
